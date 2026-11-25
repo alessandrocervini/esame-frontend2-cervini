@@ -1,8 +1,8 @@
-import type { TypeMovie } from "../types/movieTypes";
+import type { MovieDetail } from "../types/movieTypes";
 import { MovieCard } from "./MovieCard";
 
 type Props = {
-  movies: TypeMovie[];
+  movies: MovieDetail[];
   loading: boolean;
   error: string | null;
 };

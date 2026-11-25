@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { getMovies } from "../api/tmdb";
-import type { TypeMovie } from "../types/movieTypes";
+import type { MovieDetail } from "../types/movieTypes";
 import { MovieList } from "./MovieList";
 
 export const MoviesSection = () => {
-  const [movies, setMovies] = useState<TypeMovie[]>([]);
+  const [movies, setMovies] = useState<MovieDetail[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -31,6 +31,10 @@ export const MoviesSection = () => {
         items · senza filtri / paginazione
       </p>
       <MovieList movies={movies} loading={loading} error={error} />
+      <p className="note">
+        Wireframe statico. Solo la CTA Dettaglio del primo risultato naviga
+        alla pagina di dettaglio.
+      </p>
     </section>
   );
 };

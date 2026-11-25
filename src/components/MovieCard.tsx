@@ -1,9 +1,9 @@
 import { Link } from "react-router";
-import type { TypeMovie } from "../types/movieTypes";
+import type { MovieDetail } from "../types/movieTypes";
 import { formatReleaseDate, TMDB_IMAGE_URL } from "../api/tmdb";
 
 type Props = {
-  movie: TypeMovie;
+  movie: MovieDetail;
 };
 
 export const MovieCard = ({ movie }: Props) => {

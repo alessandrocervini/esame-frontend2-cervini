@@ -3,8 +3,8 @@ import { Header } from "../Header";
 
 export const Shell = () => {
   return (
-    <div className="shell">Shell
-    <Header />
+    <div className="shell">
+      <Header />
     <main className="main">
       <Outlet />
     </main>
